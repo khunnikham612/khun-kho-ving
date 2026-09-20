@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KHUN KHO VING | Personal Portfolio</title>
+<meta name="description" content="Khun Kho Ving - Video Editing, Photoshop Graphic Design and Office Documentation Freelancer.">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --bg:#0b0b0d; --panel:#141417; --gold:#d7b06a; --cream:#f5efe3;
+    --muted:#b9b3a9; --line:rgba(215,176,106,.22);
+  }
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Noto Sans Myanmar","Myanmar Text","Segoe UI",Arial,sans-serif;
+    background:var(--bg); color:var(--cream); line-height:1.75;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:auto;padding:0 24px}
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:10;
+    background:rgba(11,11,13,.82);backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);
+  }
+  nav .wrap{height:70px;display:flex;align-items:center;justify-content:space-between}
+  .brand{font-weight:800;letter-spacing:2px;color:var(--gold)}
+  nav a{margin-left:22px;color:#ddd;font-size:14px}
+  nav a:hover{color:var(--gold)}
+  .hero{min-height:100vh;display:grid;place-items:center;padding:110px 0 70px}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+  .eyebrow{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:13px;margin-bottom:15px}
+  h1{font-size:clamp(42px,7vw,78px);line-height:1.05;letter-spacing:2px;margin-bottom:15px}
+  h1 span{color:var(--gold)}
+  .subtitle{font-size:clamp(18px,2.4vw,27px);color:#e4ded4;margin-bottom:18px}
+  .intro{color:var(--muted);max-width:650px}
+  .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+  .btn{padding:12px 19px;border:1px solid var(--gold);border-radius:999px;font-weight:700}
+  .btn.primary{background:var(--gold);color:#17130b}
+  .btn:hover{transform:translateY(-2px)}
+  .portrait{position:relative;max-width:460px;margin:auto}
+  .portrait:before{content:"";position:absolute;inset:-12px;border:1px solid var(--line);border-radius:28px;transform:rotate(3deg)}
+  .portrait img{position:relative;width:100%;display:block;border-radius:24px;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+  section{padding:90px 0;border-top:1px solid rgba(255,255,255,.05)}
+  .section-title{font-size:34px;margin-bottom:10px}
+  .section-title span{color:var(--gold)}
+  .lead{color:var(--muted);max-width:760px;margin-bottom:32px}
+  .about{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+  .card{background:linear-gradient(145deg,#17171b,#101013);border:1px solid var(--line);border-radius:20px;padding:28px}
+  .card h3{color:var(--gold);margin-bottom:10px}
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .service{min-height:180px}
+  .num{font-size:13px;color:var(--gold);letter-spacing:2px}
+  .service h3{font-size:21px;margin:12px 0 7px}
+  .service p{color:var(--muted);font-size:15px}
+  .contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .contact a{display:block;padding:17px 19px;border:1px solid var(--line);border-radius:14px;background:#111115;margin-top:10px}
+  .contact a:hover{border-color:var(--gold);color:var(--gold)}
+  footer{padding:30px 0;color:#888;text-align:center;border-top:1px solid rgba(255,255,255,.05);font-size:13px}
+  @media(max-width:800px){
+    nav a{display:none}
+    .hero-grid,.about,.contact{grid-template-columns:1fr}
+    .hero{padding-top:105px}
+    .portrait{max-width:390px}
+    .services{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <div class="brand">KHUN KHO VING</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Personal Portfolio • Freelancer</div>
+      <h1>KHUN <span>KHO VING</span></h1>
+      <div class="subtitle">Creative Visual Content &amp; Design</div>
+      <p class="intro">
+        မင်္ဂလာပါ၊ ကျနော် <b>Khun Kho Ving - ခွန်ခိုဗင်ႏ</b> ဖြစ်ပါတယ်။
+        Visual Content နဲ့ ဒီဇိုင်းပိုင်းကို ဝါသနာပါပြီး Video Editing,
+        Photoshop Graphic Design နဲ့ Office Documentation အပိုင်းတွေကို
+        အဓိက လုပ်ဆောင်ပေးနေတဲ့ Freelancer တစ်ယောက်ဖြစ်ပါတယ်။
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="#services">My Services</a>
+        <a class="btn" href="#contact">Contact Me</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="profile.jpg" alt="Khun Kho Ving portrait">
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-title">About <span>Me</span></div>
+    <p class="lead">Creative work ကို သပ်ရပ်ပြီး ခေတ်မီတဲ့ပုံစံနဲ့ စနစ်တကျ ဖန်တီးပေးပါတယ်။</p>
+    <div class="about">
+      <div class="card">
+        <h3>ကျနော့်အကြောင်း</h3>
+        <p>
+          ခေတ်သစ် Social Media ပလပ်ဖောင်းတွေဖြစ်တဲ့ TikTok, Facebook နဲ့ YouTube
+          ပေါ်မှာ ကြည့်ရှုသူတွေရဲ့ အာရုံစိုက်မှုကို ရရှိစေဖို့ သက်ဝင်လှုပ်ရှားတဲ့
+          Video Editing နဲ့ သပ်ရပ်လှပတဲ့ Photoshop Design တွေကို ဖန်တီးပေးပါတယ်။
+        </p>
+      </div>
+      <div class="card">
+        <h3>ကျနော့်ရဲ့ အဓိကလုပ်ဆောင်ချက်</h3>
+        <p>
+          ကုန်ပစ္စည်းကြော်ငြာများ၊ Social Media Posts များ၊ YouTube
+          Thumbnails / Shorts များနဲ့ စာရွက်စာတမ်းဆိုင်ရာ Format ပြင်ဆင်မှုများကို
+          သေချာစနစ်တကျ ဖန်တီးပေးလျက်ရှိပါတယ်။
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-title">My <span>Services</span></div>
+    <p class="lead">လိုအပ်တဲ့ Visual Content နဲ့ Documentation အလုပ်တွေကို ရည်ရွယ်ချက်နဲ့ ကိုက်ညီအောင် ဖန်တီးပေးပါတယ်။</p>
+    <div class="services">
+      <div class="card service">
+        <div class="num">01 / VIDEO</div>
+        <h3>Video Editing</h3>
+        <p>TikTok, Facebook, YouTube အတွက် Short Video, Promotional Video နှင့် Social Content Editing။</p>
+      </div>
+      <div class="card service">
+        <div class="num">02 / DESIGN</div>
+        <h3>Photoshop Graphic Design</h3>
+        <p>Social Media Post, Product Advertisement, Poster, Thumbnail နှင့် အခြား Graphic Design များ။</p>
+      </div>
+      <div class="card service">
+        <div class="num">03 / OFFICE</div>
+        <h3>Office Documentation</h3>
+        <p>စာရွက်စာတမ်းများ၏ Format, Layout, Typing နှင့် Presentation ပိုင်းဆိုင်ရာ ပြင်ဆင်ပေးခြင်း။</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-title">Let's <span>Connect</span></div>
+    <p class="lead">အလုပ်အပ်နှံလိုပါက အောက်ပါနည်းလမ်းများမှတစ်ဆင့် ဆက်သွယ်နိုင်ပါတယ်။</p>
+    <div class="contact">
+      <div class="card">
+        <h3>Phone</h3>
+        <a href="tel:09683816995">📞 09683816995</a>
+      </div>
+      <div class="card">
+        <h3>Facebook</h3>
+        <a href="https://www.facebook.com/share/19YhheHYrd/" target="_blank" rel="noopener">🌐 Facebook Profile / Page</a>
+      </div>
+      <div class="card">
+        <h3>Viber</h3>
+        <a href="viber://chat?number=09683816995">💬 Viber — 09683816995</a>
+      </div>
+      <div class="card">
+        <h3>Telegram</h3>
+        <a href="https://t.me/niway844" target="_blank" rel="noopener">✈️ Telegram — @niway844</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 KHUN KHO VING · Personal Portfolio
+</footer>
+</body>
+</html>
